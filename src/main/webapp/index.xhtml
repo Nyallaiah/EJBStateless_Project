@@ -1,0 +1,17 @@
+<html xmlns:h="http://java.sun.com/jsf/html">
+<head>
+  <title>EJB - Stateless</title>
+</head>
+<body>
+  <h3>EJB - Stateless</h3>
+  <h:form>
+    <p>Input A : <h:inputText value="#{calc.a}" /> </p>
+    <p>Input B : <h:inputText value="#{calc.b}" /> </p>
+    <p>Result  = #{calc.c}</p>
+    <p>
+      <h:commandButton action="#{calc.callEJBadd()}" value="ADD" />
+         <h:commandButton action="#{calc.callEJBsub()}" value="SUBTRACT" />
+    </p>
+  </h:form>
+</body>
+</html>
